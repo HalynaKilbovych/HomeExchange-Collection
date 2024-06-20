@@ -1,0 +1,125 @@
+.clickable-gallery {
+    background-color: var(--primary-accent-color);
+    color: var(--secondary-accent-color1);
+}
+
+.clickable-gallery-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.clickable-gallery-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.clickable-gallery-item {
+    width: 100%;
+    display: flex;
+}
+
+.clickable-gallery-img {
+    height: 330px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clickable-gallery-date {
+    font-size: 11.11px;
+    color: var(--secondary-accent-color3);
+    opacity: 0.7;
+}
+.clickable-gallery-subtitle {
+}
+
+.clickable-gallery-txt-wrap { 
+    padding: 10px 15px 25px;
+    border: 1px solid var(--secondary-accent-color3);
+    border-top: none;
+}
+
+.clickable-gallery-description {
+    margin-bottom: 10px;
+}
+
+.clickable-gallery-btn {
+    display: block;
+    padding: 5px 0px;
+}
+
+@media screen and (min-width: 450px) {
+    .clickable-gallery-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .clickable-gallery-item {
+        width: calc((100% - 30px) / 2);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .clickable-gallery-item {
+        width: calc((100% - 60px) / 3);
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+}
+
+@media screen and (min-width: 1920px) {
+
+}
+
+.clickable-gallery-item {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+.clickable-gallery-item:nth-child(even) {
+    transform: translateX(-100%);
+}
+
+.clickable-gallery-img img {
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.clickable-gallery-item:hover .clickable-gallery-img img {
+    transform: scale(1.1);
+}
+
+.clickable-gallery-btn {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.clickable-gallery-btn::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: var(--secondary-accent-color1);
+    transition: width 0.3s ease-in-out;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.clickable-gallery-item:hover .clickable-gallery-btn::after {
+    width: 100%;
+}
+
+.clickable-gallery-item.animate {
+    opacity: 1;
+    transform: translateX(0);
+}

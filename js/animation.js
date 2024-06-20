@@ -30,5 +30,5 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     window.addEventListener('scroll', onScroll);
-    onScroll(); // Для ініціалізації анімації, якщо елементи вже у видимій області
+    onScroll(); 
 });

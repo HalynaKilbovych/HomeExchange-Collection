@@ -1,0 +1,203 @@
+:root {
+    --text-color: #000000;
+    --primary-background-color: #ffffff;
+    --primary-accent-color: #bea18d; 
+    --secondary-accent-color1: #f1efee;
+    --secondary-accent-color2: #f1f1f1;
+    --secondary-accent-color3: #f6efea;
+  }
+
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-family: sans-serif;
+  }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+body {
+  /* font-family: "Gilda Display", serif; */
+  font-family: Averta, Helvetica, Arial, Verdana, sans-serif;
+  line-height: 1.42857;
+  font-size: 15px;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  background-color: var(--primary-background-color);
+  margin: 0px;
+
+}
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+address { 
+  font-style: normal;
+}
+  
+.list { 
+  list-style: none;
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  
+    @media screen and (min-width: 480px) {
+      width: 480px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 1200px;
+    }
+
+    @media screen and (min-width: 1920px) {
+      width: 1920px;
+    }
+  }
+
+
+  .link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+
+  .btn-primary {
+    color: #fff;
+    background-color: var(--primary-accent-color);
+    border-color: var(--primary-accent-color);
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857;
+    border-radius: 2px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: normal;
+    outline: 0 none;
+  }
+  
+  .btn-default, .btn-info, .btn-language, .btn-primary, .btn-search, .btn-secondary, .btn-success {
+    -webkit-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+  }
+
+
+/* h2 */
+.title { 
+  font-family: "Gilda Display", serif; 
+  font-size: 30px; 
+  line-height: 1.4; 
+}
+
+/* h3 */
+.subtitle { 
+  font-family: "Gilda Display", serif; 
+  font-size: 21px; 
+  line-height: 1.4; 
+}
+
+/* text */
+.paragraph { 
+  font-size: 12px;
+  line-height: 1.6; 
+}
+
+@media screen and (min-width: 768px) {
+  .title { 
+    font-size: 33.175px; 
+  }
+
+  .subtitle { 
+    font-size: 23.5025px
+  }
+
+  .paragraph { 
+    font-size: 13.6px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .title { 
+    font-size: 39.81px; 
+  }
+
+  .subtitle { 
+    font-size: 27.65px; 
+  }
+
+  .paragraph { 
+    font-size: 16px; 
+  }
+}
+@media screen and (min-width: 1920px) {
+
+}
+
+
+.section { 
+  padding: 50px 0px;
+
+}
+
+@media screen and (min-width: 450px) {
+  .section { 
+    padding: 70px 0px;
+  
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section { 
+    padding: 80px 0px;
+  
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section { 
+    padding: 120px 0px;
+  
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .section { 
+    padding: 150px 0px;
+  
+  }
+}

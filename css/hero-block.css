@@ -1,0 +1,110 @@
+@media screen and (max-width: 991px) {
+    .home-banner-section {
+        padding-bottom: 100px;
+    }
+}
+.home-banner-section {
+    z-index: 1;
+    background-image: url(https://d2kzpkef14nfxb.cloudfront.net/images/website/collection/header-carousel/header_carousel_6.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 180px 5%;
+    position: relative;
+}
+
+html.w-mod-touch * {
+    background-attachment: scroll !important;
+}
+.banner-container {
+    max-width: 1290px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner-content-box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+html.w-mod-touch * {
+    background-attachment: scroll !important;
+}
+.banner-sub-heading {
+    color: #c77a63;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+html.w-mod-touch * {
+    background-attachment: scroll !important;
+}
+@media screen and (max-width: 991px) {
+    .banner-heading-box {
+        max-width: 583px;
+    }
+}
+.banner-heading-box {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+html.w-mod-touch * {
+    background-attachment: scroll !important;
+}
+@media screen and (max-width: 991px) {
+    .home-banner-heading {
+        font-size: 80px;
+        line-height: 90px;
+    }
+}
+
+html.w-mod-touch * {
+    background-attachment: scroll !important;
+}
+.banner-pragraph-box {
+    text-align: center;
+    max-width: 500px;
+}
+
+html.w-mod-touch * {
+    background-attachment: scroll !important;
+}
+.banner-button {
+    color: var(--primary-background-color);
+    background-color: var(--primary-accent-color);
+    padding: 19px 50px 20px;
+    font-weight: 500;
+    line-height: 21px;
+    transition: all 1s;
+    text-decoration: none;
+}
+
+.bd-leare {
+    z-index: -1;
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.home-banner-heading { 
+    font-size: 60px;
+    font-family: "Gilda Display", serif;
+    color: var(--primary-background-color);
+}
+
+.banner-pragraph { 
+    color: var(--primary-background-color);
+    margin-bottom: 28px;
+    font-size: 18px;
+    line-height: 32px;
+}
