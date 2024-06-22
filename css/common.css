@@ -81,11 +81,7 @@ address {
     cursor: pointer;
   }
 
-  .btn-primary {
-    color: #fff;
-    background-color: var(--primary-accent-color);
-    border-color: var(--primary-accent-color);
-  }
+
   
   .btn {
     display: inline-block;
@@ -109,6 +105,33 @@ address {
     user-select: none;
     white-space: normal;
     outline: 0 none;
+    transition: all 450ms ease-in-out;
+  }
+
+  .btn-primary {
+    color: #fff;
+    background-color: var(--primary-accent-color);
+    border-color: var(--primary-accent-color);
+  }
+
+  .btn-primary:hover {
+    color: #fff;
+    background-color: #b69782;
+    border-color: var(--primary-accent-color);
+  }
+
+  .btn-secondary { 
+    color: var(--text-color);
+    background-color: var(--primary-background-color);
+    border-color: var(--text-color);
+    border: 1px solid var(--text-color);
+  }
+
+  .btn-secondary:hover { 
+    color: var(--primary-background-color);
+    background-color: var(--primary-accent-color);
+    border-color: var(--primary-accent-color);
+    border: 1px solid var(--primary-accent-color);
   }
   
   .btn-default, .btn-info, .btn-language, .btn-primary, .btn-search, .btn-secondary, .btn-success {

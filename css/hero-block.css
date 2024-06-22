@@ -108,3 +108,42 @@ html.w-mod-touch * {
     font-size: 18px;
     line-height: 32px;
 }
+
+
+.banner-heading-box, .banner-pragraph-box, .banner-button, .banner-sub-heading {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.banner-pragraph-box {
+    transform: translateX(100px);
+}
+
+.banner-button {
+    transform: translateY(20px);
+}
+
+.banner-sub-heading {
+    transform: translateY(20px);
+}
+
+.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.visible-paragraph {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.visible-button {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.visible-sub-heading {
+    opacity: 1;
+    transform: translateY(0);
+}
