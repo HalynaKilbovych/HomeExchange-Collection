@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener('DOMContentLoaded', () => {
     const observerOptions = {
         threshold: 0.1
     };
@@ -6,17 +6,15 @@ document.addEventListener("DOMContentLoaded", function() {
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach((entry, index) => {
             if (entry.isIntersecting) {
-
                 setTimeout(() => {
-                    entry.target.classList.add("animate");
-                }, index * 200); 
+                    entry.target.classList.add('visible');
+                }, index * 100); 
                 observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
 
-    const items = document.querySelectorAll(".clickable-gallery-item");
-    items.forEach(item => {
+    document.querySelectorAll('.review-item').forEach(item => {
         observer.observe(item);
     });
 });

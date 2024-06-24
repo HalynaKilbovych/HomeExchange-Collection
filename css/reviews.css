@@ -1,0 +1,148 @@
+fieldset, label { margin: 0; padding: 0; }
+
+/****** Style Star Rating Widget *****/
+
+.rating { 
+  border: none;
+  float: left;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
+
+.review {
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('https://www.homeexchange.com/images/landing-page/collection/HeaderLuxuryAuthenticTravel.jpg') bottom;
+  background-size: cover;
+
+}
+.review-title{ 
+  color: var(--primary-background-color);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.review-list {
+  display: flex; 
+  flex-direction: column;
+  gap: 30px;
+  padding: 0px 30px;
+}
+
+.review-item {
+  padding: 20px;
+  background-color: var(--primary-background-color);
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.review-desctiption {
+  margin-bottom: 20px;
+}
+.review-user {
+  display: flex;
+  gap: 10px;
+}
+.review-img {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.review-user-name {
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+
+  .review-list { 
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+  .review-item { 
+      width: calc((100% - 30px) / 2);
+    }
+
+}
+@media screen and (min-width: 1200px) {
+
+.review-item { 
+  width: calc((100% - 90px) / 4);
+}
+}
+
+@media screen and (min-width: 1920px) {
+
+}
+
+
+
+.review-img {
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-out;
+}
+
+.review-user-name-wrap {
+    transform: translateX(-200%);
+    transition: transform 0.5s ease-out;
+    transition-delay: 0.25s;
+}
+
+.review-description {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+    transition-delay: 0.75s;
+}
+
+.review-item.visible .review-img {
+    transform: translateX(0);
+}
+
+.review-item.visible .review-user-name-wrap {
+    transform: translateX(0);
+    transition-delay: 0.35s; /* Затримка для кожного елемента */
+}
+
+.review-item.visible .review-description {
+    opacity: 1;
+}

@@ -31,8 +31,6 @@
     color: var(--secondary-accent-color3);
     opacity: 0.7;
 }
-.clickable-gallery-subtitle {
-}
 
 .clickable-gallery-txt-wrap { 
     padding: 10px 15px 25px;
@@ -117,6 +115,11 @@
 
 .clickable-gallery-item:hover .clickable-gallery-btn::after {
     width: 100%;
+}
+
+.clickable-gallery-item {
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .clickable-gallery-item.animate {
