@@ -2,7 +2,7 @@
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 
 :root {
-    --text-color: #000000;
+    --text-color: #3f3f3f;
     --primary-background-color: #ffffff;
     --primary-accent-color: #bea18d; 
     --secondary-accent-color1: #f1efee;
@@ -161,6 +161,32 @@ address {
 .paragraph { 
   font-size: 12px;
   line-height: 1.6; 
+}
+
+.title.title-line::after{
+  width: 70px;
+  height: 2px;
+  background-color: var(--primary-accent-color);
+  display: block;
+  content: ""; 
+  margin: 0 auto;
+  margin-top: 20px;
+  transition: all 250ms ease-in-out;
+}
+
+.title.title-line.title-line--white::after { 
+  width: 70px;
+  height: 2px;
+  background-color: var(--primary-background-color);
+  display: block;
+  content: ""; 
+  margin: 0 auto;
+  margin-top: 20px;
+  transition: all 250ms ease-in-out;
+}
+
+.section:hover .title.title-line::after {
+  width: 140px; 
 }
 
 @media screen and (min-width: 768px) {

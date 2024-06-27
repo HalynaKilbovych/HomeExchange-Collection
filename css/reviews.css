@@ -48,7 +48,7 @@ fieldset, label { margin: 0; padding: 0; }
 .review-title{ 
   color: var(--primary-background-color);
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .review-list {

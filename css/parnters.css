@@ -1,0 +1,78 @@
+.partners {
+    padding: 70px 0;  
+    background-color: var( --secondary-accent-color3);
+}
+
+.partners-title {
+    color: var(--primary-accent-color);
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    
+}
+.partners-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.partners-item {
+}
+
+
+.swiper-container {
+    width: 100%;
+    padding: 0px 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.swiper-wrapper { 
+
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+body > section.partners > div > div > div.swiper-button-next { 
+    color: var(--primary-accent-color);
+}
+
+body > section.partners > div > div > div.swiper-button-prev { 
+    color: var(--primary-accent-color);
+}
+
+body > section.partners > div > div > div.swiper-button-next::after { 
+    font-size: 20px;
+}
+
+body > section.partners > div > div > div.swiper-button-prev::after { 
+    font-size: 20px;
+}
+
+body > section.partners > div > div > div.swiper-button-prev { 
+    left: 0;
+    justify-content: start;
+}
+
+
+body > section.partners > div > div > div.swiper-button-next { 
+    right: 0;
+    justify-content: end;
+}
+
+
+body > section.partners > div > div > div.swiper-button-next.animation { 
+    display: none;
+}
+
+body > section.partners > div > div > div.swiper-button-prev.animation { 
+    display: none;
+}
