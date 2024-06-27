@@ -14,28 +14,36 @@
   background: url(https://www.homeexchange.com/images/landing-page/collection-homes/Collection-Map.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto 500px;
+  background-size: cover;
 
 }
 
 .cta-image.cta-image--left .cta-image-bg { 
   background: url(https://www.homeexchange.com/images/landing-page/collection/HeaderLuxuryAuthenticTravel.jpg);
-  background-size: auto 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .cta-image.cta-image--right .cta-image-bg { 
   background: url(https://d2kzpkef14nfxb.cloudfront.net/images/website/collection/concept-collection/concept_collection_1.jpg);
-  background-size: auto 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .cta-image.cta-image--two-btn.cta-image--left .cta-image-bg { 
   background: url(https://d2kzpkef14nfxb.cloudfront.net/images/website/collection/concept-collection/concept_collection_2.jpg);
-  background-size: auto 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .cta-image.cta-image--two-btn.cta-image--right .cta-image-bg { 
   background: url(https://www.homeexchange.com/images/landing-page/collection/HeaderLuxuryAuthenticTravel.jpg);
-  background-size: auto 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .cta-image-content {

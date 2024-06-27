@@ -72,8 +72,8 @@ address {
       width: 1200px;
     }
 
-    @media screen and (min-width: 1920px) {
-      width: 1920px;
+    @media screen and (min-width: 1600px) {
+      width: 1600px;
     }
   }
 
